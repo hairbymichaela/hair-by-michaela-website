@@ -1,12 +1,171 @@
-<!DOCTYPE html>
-<html lang="en"
-  <head>
-  <meta charset="UTF-8"
-    <metan name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Hair by Michaela</</title>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Hair by Michaela — warm, professional hairdressing in Cheshunt. Colour, cutting, styling and bridal hair at FRA'N'Co Hair.">
+<title>Hair by Michaela | Cheshunt Hairdresser</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#fffdfa;--cream:#f8f3ed;--sand:#eee3d7;--taupe:#bda898;--deep:#514741;--body:#736862;--line:#e5d9cf;
+  --shadow:0 20px 60px rgba(81,71,65,.12);--radius:28px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--ivory);color:var(--body);font:16px/1.75 Manrope,Arial,sans-serif} img{display:block;width:100%} a{color:inherit;text-decoration:none}
+h1,h2,h3,.brand{font-family:"Cormorant Garamond",Georgia,serif;color:var(--deep);font-weight:600}.wrap{width:min(1240px,90vw);margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:#9d8879}.script{font-family:Allura,cursive;font-weight:400;color:#aa8f7f}.section-title{font-size:clamp(3.1rem,6vw,5.4rem);line-height:.95;margin:.2em 0 .3em}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border:1px solid var(--taupe);border-radius:999px;font-weight:600;transition:.22s ease}.btn.primary{background:var(--taupe);color:white;border-color:var(--taupe)}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(81,71,65,.14)}
+header{position:sticky;top:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:15px 5vw;background:rgba(255,253,250,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(229,217,207,.85)}.brand{font-size:2rem;line-height:1}.brand small{display:block;font:500 .58rem/1.2 Manrope,sans-serif;letter-spacing:.22em;text-transform:uppercase;margin-top:2px;color:#9a887d}nav{display:flex;gap:24px;align-items:center;font-size:.92rem}nav a:not(.btn):hover{color:var(--deep)}.menu{display:none;background:none;border:0;font-size:1.5rem;color:var(--deep)}
+.hero{min-height:760px;background:var(--cream);display:grid;grid-template-columns:1.02fr .98fr;align-items:stretch}.hero-copy{padding:110px 7vw 90px max(5vw,calc((100vw - 1240px)/2));display:flex;flex-direction:column;justify-content:center}.hero h1{font-size:clamp(4.4rem,8vw,8rem);line-height:.82;margin:.15em 0 .24em;max-width:760px}.hero h1 .script{display:block;font-size:.68em;line-height:.8;margin-left:1.2em}.hero p{font-size:1.08rem;max-width:600px}.hero-image{height:100%;min-height:760px;object-fit:cover;object-position:center}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:25px;font-size:.88rem;color:#83756d}
+.intro-strip{background:var(--sand);padding:16px 5vw;text-align:center;color:var(--deep);font-size:.87rem;letter-spacing:.12em;text-transform:uppercase}
+section{padding:110px 0}.about-grid,.split{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:center}.about-photo{height:660px;object-fit:cover;object-position:center 20%;border-radius:260px 260px 24px 24px;box-shadow:var(--shadow)}.lead{font:500 1.55rem/1.35 "Cormorant Garamond",Georgia,serif;color:#78665c}.signature{font-size:3.2rem;display:block;margin-top:12px}
+.services{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px}.card{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:24px;padding:28px;min-height:225px}.card h3{font-size:2.05rem;line-height:1;margin:0 0 12px}.card-number{font-family:"Cormorant Garamond",serif;font-size:1.2rem;color:#b6a092;margin-bottom:24px}.services-note{margin-top:24px}
+.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-auto-rows:280px;gap:16px;margin-top:38px}.gallery-grid img{height:100%;object-fit:cover;border-radius:22px}.gallery-grid .feature{grid-row:span 2}.gallery-grid .wide{grid-column:span 2}.gallery-grid .top{object-position:center 22%}
+.bridal{background:var(--sand)}.bridal-images{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bridal-images img{height:560px;object-fit:cover;border-radius:24px}.bridal-images img:first-child{margin-top:48px}.pills{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.pill{border:1px solid #c8b5a7;border-radius:999px;padding:9px 13px;color:var(--deep);background:rgba(255,255,255,.35)}
+.visit{background:var(--cream)}.address-card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow)}.address-card h3{font-size:2.5rem;margin:0}.hours{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.hours div{background:var(--cream);border-radius:16px;padding:16px}.map{width:100%;height:500px;border:0;border-radius:var(--radius);box-shadow:var(--shadow)}
+.contact{text-align:center}.contact .section-title{max-width:850px;margin-left:auto;margin-right:auto}.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.contact-note{max-width:700px;margin:0 auto}
+footer{background:#e9ddd2;padding:54px 5vw;color:var(--deep)}.footer-grid{width:min(1240px,90vw);margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr auto;gap:28px}.footer-brand{font-size:2.35rem}.footer-script{font-size:2.2rem;display:block;margin-top:-8px}.copyright{width:min(1240px,90vw);margin:35px auto 0;padding-top:22px;border-top:1px solid rgba(81,71,65,.15);font-size:.8rem}
+@media(max-width:980px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--ivory);padding:24px 5vw;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr}.hero-copy{padding:90px 6vw 60px}.hero-image{min-height:560px;height:560px}.about-grid,.split{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-grid .wide{grid-column:span 2}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){body{font-size:15.5px}.brand{font-size:1.55rem}.hero{min-height:auto}.hero-copy{padding-top:68px}.hero h1{font-size:4rem}.hero h1 .script{margin-left:.55em}.hero-image{height:430px;min-height:430px}.actions{flex-direction:column}.btn{width:100%}.trust{display:grid;gap:5px}section{padding:82px 0}.about-photo{height:500px}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:370px}.gallery-grid .feature,.gallery-grid .wide{grid-row:auto;grid-column:auto}.bridal-images{grid-template-columns:1fr}.bridal-images img,.bridal-images img:first-child{height:430px;margin:0}.hours{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.contact-links{flex-direction:column}}
+</style>
 </head>
-  <body>
-    <h1>Hair by Michaela</h1>
-    <p>Welcome to my new website!</p>
-    </body>
+<body>
+<header>
+  <a class="brand" href="#home">Hair by Michaela<small>Cheshunt Hairdresser</small></a>
+  <button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+  <nav>
+    <a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#bridal">Bridal</a><a href="#visit">Visit</a>
+    <a class="btn primary" target="_blank" rel="noopener" href="https://squareup.com/appointments/book/LVZ4N6WYN4WR7">Book Here</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow">Hairdresser in Cheshunt</div>
+    <h1>Hair you'll love,<span class="script">from someone you trust.</span></h1>
+    <p>Friendly, professional hairdressing with honest advice, beautiful results and a relaxed appointment from start to finish.</p>
+    <div class="actions">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://squareup.com/appointments/book/LVZ4N6WYN4WR7">Book Here</a>
+      <a class="btn" href="#contact">Get in Touch</a>
+    </div>
+    <div class="trust"><span>New clients welcome</span><span>•</span><span>Free consultations</span><span>•</span><span>Salon & mobile appointments</span></div>
+  </div>
+  <img class="hero-image" src="assets/golden.jpg" alt="Golden blonde curls created by Hair by Michaela">
+</section>
+
+<div class="intro-strip">Colour · Cutting · Styling · Bridal Hair · Cheshunt</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <img class="about-photo" src="assets/michaela.jpg" alt="Michaela from Hair by Michaela">
+    <div>
+      <div class="eyebrow">About Me</div>
+      <h2 class="section-title">Hi, I'm Michaela.</h2>
+      <p class="lead">I want every appointment to feel calm, friendly and completely tailored to you.</p>
+      <p>After working in the same salon from the age of 17, I took the leap and started Hair by Michaela—creating a business that reflects the experience I want every client to have.</p>
+      <p>Whether you're ready for a full colour change or simply want your hair to feel like you again, you will always get honest advice, careful attention and no pressure.</p>
+      <span class="script signature">Michaela x</span>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="eyebrow">Services</div>
+    <h2 class="section-title">Beautiful hair, tailored to you.</h2>
+    <p>Every appointment starts with a proper consultation so your colour, cut or style works for your hair, lifestyle and goals.</p>
+    <div class="cards">
+      <article class="card"><div class="card-number">01</div><h3>Colour</h3><p>Balayage, highlights, dimensional colour, grey blending and glossy transformations.</p></article>
+      <article class="card"><div class="card-number">02</div><h3>Cutting</h3><p>Thoughtful cutting and reshaping to help your hair sit beautifully and feel easy to manage.</p></article>
+      <article class="card"><div class="card-number">03</div><h3>Styling</h3><p>Blow-dries, curls and occasion styling for events, nights out and special plans.</p></article>
+      <article class="card"><div class="card-number">04</div><h3>Bridal</h3><p>Relaxed trials and wedding-day styling created around you, your dress and your morning.</p></article>
+    </div>
+    <p class="services-note">Prices, service times and availability can all be viewed through my online booking page.</p>
+    <a class="btn primary" target="_blank" rel="noopener" href="https://squareup.com/appointments/book/LVZ4N6WYN4WR7">View Services & Book</a>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="eyebrow">Gallery</div>
+    <h2 class="section-title">A little of my work.</h2>
+    <div class="gallery-grid">
+      <img class="feature" src="assets/blonde_curls.jpg" alt="Soft blonde curls">
+      <img class="top" src="assets/brunette_front.jpg" alt="Glossy brunette layers">
+      <img src="assets/red_curls.jpg" alt="Rich red curled hairstyle">
+      <img class="wide" src="assets/brunette_back.jpg" alt="Dimensional brunette colour">
+      <img src="assets/blonde_straight.jpg" alt="Smooth blonde finish">
+      <img src="assets/red_straight.jpg" alt="Sleek red colour">
+      <img src="assets/grey_screen.jpg" alt="Soft grey layered hairstyle">
+    </div>
+  </div>
+</section>
+
+<section class="bridal" id="bridal">
+  <div class="wrap split">
+    <div>
+      <div class="eyebrow">Bridal Hair</div>
+      <h2 class="section-title">A calm, beautiful start to your wedding day.</h2>
+      <p>Your wedding morning should feel exciting and relaxed. Together, we will create a style that feels like you and lasts beautifully from the aisle to the dance floor.</p>
+      <div class="pills"><span class="pill">Trials £35</span><span class="pill">Bridal hair from £150</span><span class="pill">Bridesmaids from £50</span></div>
+      <p>Travel is quoted separately. A 25% non-refundable deposit secures your date, with the remaining balance due two weeks before the wedding.</p>
+      <a class="btn primary" href="mailto:hair.by.michaela@hotmail.com?subject=Bridal%20Hair%20Enquiry">Make a Bridal Enquiry</a>
+    </div>
+    <div class="bridal-images">
+      <img src="assets/bridal_blue.jpg" alt="Bridal half-up hairstyle with blue accessories">
+      <img src="assets/bridal_tiara.jpg" alt="Bridal curls with a tiara">
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="eyebrow">Visit the Salon</div>
+    <h2 class="section-title">Find me in Cheshunt.</h2>
+    <div class="split">
+      <div class="address-card">
+        <h3>Hair by Michaela</h3>
+        <p>Based at <strong>FRA'N'Co Hair</strong></p>
+        <p><strong>3 Albury Grove Road<br>Cheshunt<br>EN8 8NS</strong></p>
+        <p>Tesco is directly opposite the salon for convenient parking.</p>
+        <div class="hours">
+          <div><strong>Salon days</strong><br>Thursday, Friday & Saturday</div>
+          <div><strong>Mobile days</strong><br>Monday, Tuesday & Wednesday<br><small>Subject to location and availability</small></div>
+        </div>
+        <div class="actions">
+          <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=3+Albury+Grove+Road,+Cheshunt,+EN8+8NS">Get Directions</a>
+          <a class="btn" href="tel:07904471447">Call Michaela</a>
+        </div>
+      </div>
+      <iframe class="map" title="Map of 3 Albury Grove Road, Cheshunt" src="https://www.google.com/maps?q=3%20Albury%20Grove%20Road%2C%20Cheshunt%2C%20EN8%208NS&output=embed" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Get in Touch</div>
+    <h2 class="section-title">Ready for hair that feels like you?</h2>
+    <p class="contact-note">For appointments, use the Book Here button to see live availability and pricing. For bridal hair or anything you would like to chat through first, send me a message.</p>
+    <div class="contact-links">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://squareup.com/appointments/book/LVZ4N6WYN4WR7">Book Here</a>
+      <a class="btn" href="mailto:hair.by.michaela@hotmail.com">Email Michaela</a>
+      <a class="btn" href="tel:07904471447">07904 471447</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="brand footer-brand">Hair by Michaela</div><span class="script footer-script">from someone you trust.</span></div>
+    <div><strong>Visit</strong><br>FRA'N'Co Hair<br>3 Albury Grove Road<br>Cheshunt, EN8 8NS</div>
+    <div><strong>Contact</strong><br><a href="tel:07904471447">07904 471447</a><br><a href="mailto:hair.by.michaela@hotmail.com">hair.by.michaela@hotmail.com</a></div>
+    <div><a class="btn primary" target="_blank" rel="noopener" href="https://squareup.com/appointments/book/LVZ4N6WYN4WR7">Book Here</a></div>
+  </div>
+  <div class="copyright">© 2026 Hair by Michaela · Cheshunt</div>
+</footer>
+<script>document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')))</script>
+</body>
 </html>
